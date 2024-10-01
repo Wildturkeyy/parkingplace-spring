@@ -73,7 +73,7 @@ jobs:
           host: ${{ secrets.LIVE_SERVER_IP }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            echo "${{ secrets.SECRET_YML_BASE64 }}" | base64 --decode > /path/to/application-secret.yml
+            echo "${{ secrets.SECRET_YML_BASE64 }}" | base64 --decode > /home/ubuntu/application-secret.yml 
             
       - name: Docker compose
         uses: appleboy/ssh-action@master
