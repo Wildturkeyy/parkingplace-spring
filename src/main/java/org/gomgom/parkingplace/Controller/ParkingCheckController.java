@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 @RestController
-public class HealthCheckController {
+public class ParkingCheckController {
 
     @Value("${server.env}")
     private String env;
