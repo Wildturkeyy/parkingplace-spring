@@ -37,7 +37,7 @@ jobs:
         run: docker build --platform linux/amd64 -t ${{ secrets.DOCKERHUB_USERNAME }}/live_server .  
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/live_server:latest
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/live-server:latest
 
   deploy:
     needs: build
