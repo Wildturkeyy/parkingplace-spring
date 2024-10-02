@@ -15,11 +15,10 @@ spring:
   config:
     activate:
       on-profile: blue
-    additional-location: file:/home/ubuntu/application-secret.yml
 
 server:
   port: 8080
-  serverAddress: 13.124.250.233
+  serverAddress: 15.165.117.238
 
 serverName: blue_server
 
@@ -29,11 +28,10 @@ spring:
   config:
     activate:
       on-profile: green
-    additional-location: file:/home/ubuntu/application-secret.yml
 
 server:
   port: 8081
-  serverAddress: 13.124.250.233
+  serverAddress: 15.165.117.238
 
 serverName: green_server
 
